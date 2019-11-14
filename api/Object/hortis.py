@@ -1,5 +1,6 @@
 import requests
 import json
+import hashlib
 
 class sign:
     def __init__(self, id, firstname, lastname):
