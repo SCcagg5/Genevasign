@@ -25,7 +25,7 @@ public class schema {
         cipher = Cipher.getInstance(RSA);
         symetricCipher = Cipher.getInstance(AES);
 
-        Path fileLocation = Paths.get("./data/privatekey.der");
+        Path fileLocation = Paths.get("./data/private_key.der");
         byte[] privatekeyBytes =  Files.readAllBytes(fileLocation);
         PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(privatekeyBytes);
         KeyFactory kf = KeyFactory.getInstance(RSA);
